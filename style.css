@@ -1,0 +1,123 @@
+body {
+  font-size: 2rem;
+  display: grid;
+  order: 2;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(243, 181, 181);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li:nth-child(odd){
+  background-color: rgba(255, 205, 205, 0.932); 
+}
+li {
+  border-radius: 10px;
+  border: 1px solid palevioletred;
+  transition: all 10s ease-in;
+}
+.done {
+  text-decoration: line-through;
+}
+li:hover {
+ font-size: 1.1em;
+  cursor: pointer;
+}
+input {
+  width: 40%;
+  height: 30px;
+  border: 1px solid greenyellow;
+  padding-left: 10px;
+  text-align: center;
+  margin-right: 5px;
+}
+input:focus {
+  outline-color: lawngreen;
+}
+#firstHR {
+  display: inline-block;
+  width: 15%;
+  height: 5px;
+  background-color: red;
+  box-shadow: 0 10px 16px 0px red;
+}
+#secondHR {
+  display: inline-block;
+  width: 15%;
+  height: 5px;
+  background-color: cyan;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 0 10px 16px 0px cyan;
+}
+#thirdHR {
+  display: inline-block;
+  width: 15%;
+  height: 5px;
+  background-color: greenyellow;
+  box-shadow: 0 10px 16px 0px yellowgreen;
+}
+#shopping{
+  color: rebeccapurple;
+  text-shadow: 5px 5px 5px rgb(248, 135, 248);
+}
+#list {
+  text-transform: uppercase;
+  text-decoration-line: line-through;
+  color: rgba(255,250,200,0.5);
+}
+.fa-cart-plus:before {
+  color: gray;
+}
+.fa-check:before {
+  color: green;
+}
+.fa-plus{
+  color: greenyellow;
+  align-self: center;
+  justify-self: center;
+}
+#title {
+  margin-bottom: 0;
+  
+}
+.container {
+  
+  width: 100%;
+  justify-content: center;
+}
+.add {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.btn {
+  position: relative;
+  float: right;
+  background: transparent;
+  color:red;
+  width: 30px;
+  height: 40px;
+  border: 0;
+  font-size: large;
+  display: none;
+}
+.btn:active { transform: translateY(5px); }
+.btn:focus { outline: none; }
+li:hover .btn { display: block; }
+h2 {
+  color: rgb(116, 106, 106);
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255, 187, 187, 0.932);
+  color: white;
+  text-align: center;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
